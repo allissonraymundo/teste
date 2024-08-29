@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Jogo da memória</title>
+    
+</head> 
+
+
+<body>
+    <button>
+        <a href="index.html">Voltar</a>
+    </button>
+    <h1>Jogo da memória </h1> 
+
+    <div class="cronometro">
+        <p id="tempo">00:00:00</p>
+      </div>
+    
+
+    <main class="memory-game">
+        <style>.card {
+            height: calc( 49% - 10px);
+            width: calc(25% - 10px);
+            margin: 5px;
+            position: relative;
+            box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+            cursor: pointer;
+            transform: scale(1);
+            transform-style: preserve-3d; /* adiciona perspectiva 3d, para que o elemento nao fique achatada no plano */
+            transition: transform .9s; /* adiciona efeito de movimento ao flip do card */
+            
+        }</style>
+    
+        <div class="card" data-card="baiacu">
+            <img class="card-front" src="./img/baiacu.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        
+        </div>
+        
+        <div class="card" data-card="aguaviva">
+            <img class="card-front" src="./img/aguaviva.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="esponja">
+            <img class="card-front" src="./img/esponja.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="orca">
+            <img class="card-front" src="./img/orca.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="polvo">
+            <img class="card-front" src="./img/polvo.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="polvo">
+            <img class="card-front" src="./img/polvo.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="tubarao">
+            <img class="card-front" src="./img/tubarao.png" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="orca">
+            <img class="card-front" src="./img/orca.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="tubarao">
+            <img class="card-front" src="./img/tubarao.png" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+        </div>
+        <div class="card" data-card="esponja">
+            <img class="card-front" src="./img/esponja.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+            
+        </div>
+        <div class="card" data-card="aguaviva">
+            <img class="card-front" src="./img/aguaviva.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+            
+        </div>
+        <div class="card" data-card="baiacu">
+            <img class="card-front" src="./img/baiacu.jpg" alt="Face da carta">
+            <img class="card-back" src="./img/verso.png" alt="Verso da carta">
+            
+        </div>
+    
+        
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
